@@ -1,0 +1,141 @@
+/* Override the default background image */
+
+.login-pf body {
+    background: linear-gradient(to right,  #134153 0%, #238C8C 100%);
+    background-size: cover;
+    height: 100%;
+}
+
+.login-pf {
+    background: none;
+}
+
+.kcHeaderWrapperClass span[data-kc-msg="loginTitleHtml"] {
+    font-size: 0;
+    display: block;
+    width: 250px; /* Adjust width as needed */
+    height: 60px; /* Adjust height as needed */
+    margin: 0 auto;
+    background-image: url('./assets/logo.png'); /* Add your logo path */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* Update header container */
+.kcHeaderClass {
+    margin-bottom: 20px;
+}
+
+/* Style the card container */
+.card-pf {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    border-top: 4px solid #238C8C;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the header */
+.kcHeaderClass {
+    color: white;
+    text-align: center;
+}
+
+.kcHeaderWrapperClass {
+    padding: 32px 10px 20px !important;
+    font-size: 24px;
+    font-weight: 300;
+}
+
+/* Style form elements */
+.kcLabelClass {
+    color: #333;
+    font-weight: 500;
+}
+
+.kcInputClass {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 8px;
+    transition: border-color 0.3s ease;
+}
+
+.kcInputClass:focus {
+    border-color: #238C8C;
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(35, 140, 140, 0.2);
+}
+
+/* Style the primary button */
+.kcButtonClass.kcButtonPrimaryClass {
+    background: #238C8C;
+    border-color: #238C8C;
+    color: white;
+    border-radius: 4px;
+    padding: 10px;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+.kcButtonClass.kcButtonPrimaryClass:hover {
+    background: #1A6B6B;
+    border-color: #1A6B6B;
+}
+
+.kcFormPasswordVisibilityButtonClass {
+    --pf-c-button--m-control--hover--after--BorderBottomColor: #238C8C !important;
+    --pf-c-button--m-control--after--BorderBottomColor: #238C8C !important;
+}
+.kcFormSocialAccountListButtonClass {
+    --pf-c-button--m-control--hover--after--BorderBottomColor: #238C8C !important;
+    --pf-c-button--m-control--after--BorderBottomColor: #238C8C !important;
+}
+
+/* Style the secondary button */
+.kcButtonClass.kcButtonDefaultClass {
+    background: transparent;
+    border: 2px solid #238C8C;
+    color: #238C8C;
+    border-radius: 4px;
+    padding: 8px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.kcButtonClass.kcButtonDefaultClass:hover {
+    background: rgba(35, 140, 140, 0.1);
+    border-color: #1A6B6B;
+    color: #1A6B6B;
+}
+
+.kcButtonClass.kcButtonBlockClass {
+    width: 100%;
+    display: block;
+}
+
+.kcButtonClass.kcButtonLargeClass {
+    padding: 10px 16px;
+    font-size: 16px;
+}
+
+/* Style links */
+.kcFormOptionsWrapperClass a {
+    color: #238C8C;
+    text-decoration: none;
+}
+
+.kcFormOptionsWrapperClass a:hover {
+    color: #238C8C;
+    text-decoration: underline;
+}
+
+/* Style the registration link */
+.kcSignUpClass a {
+    color: #238C8C;
+    text-decoration: none;
+}
+
+.kcSignUpClass a:hover {
+    color: #238C8C;
+    text-decoration: underline;
+}
