@@ -1,0 +1,102 @@
+:root {
+    /* Primary Colors */
+    --color-primary: #238C8C;
+    --color-primary-dark: #012b2e;
+    --color-secondary: #024449;
+    --color-accent: #29F48F;
+    --color-hover: #1c7e7e;
+    
+    /* Text Colors */
+    --text-light: #ffffff;
+    --text-dark: #333333;
+    
+    /* Transition */
+    --transition-default: all 0.3s ease;
+}
+
+.pf-v5-c-masthead {
+    background-color: var(--color-primary-dark) !important;
+    color: var(--text-light);
+    transition: var(--transition-default);
+}
+
+.pf-v5-c-toolbar {
+    background-color: var(--color-primary-dark) !important;
+    color: var(--text-light);
+}
+
+/* Sidebar styling */
+.pf-v5-c-page__sidebar {
+    background-color: var(--color-secondary) !important;
+    transition: var(--transition-default);
+}
+
+.pf-v5-c-nav__link {
+    color: var(--text-light) !important;
+    transition: var(--transition-default);
+}
+
+.pf-v5-c-nav__link:hover,
+.pf-v5-c-nav__link.pf-m-current {
+    background-color: var(--color-hover) !important;
+    color: var(--text-light) !important;
+}
+
+.pf-v5-c-nav__link.pf-m-current::after {
+    border-color: var(--color-accent) !important;
+}
+
+.pf-v5-c-nav__link:active,
+.pf-v5-c-nav__link:focus {
+    background-color: var(--color-hover) !important;
+    outline-color: var(--color-accent) !important;
+}
+
+.pf-v5-c-nav__link.pf-m-current, 
+.pf-v5-c-nav__link.pf-m-current:hover, 
+.pf-v5-c-nav__item.pf-m-current:not(.pf-m-expanded) .pf-v5-c-nav__link {
+    background-color: var(--color-hover) !important;
+}
+
+.pf-v5-c-nav__link.pf-m-current::after, 
+.pf-v5-c-nav__link.pf-m-current:hover::after, 
+.pf-v5-c-nav__item.pf-m-current:not(.pf-m-expanded) .pf-v5-c-nav__link::after {
+    border-color: var(--color-accent) !important;
+}
+
+/* PatternFly Override */
+:root {
+    --pf-v5-global--primary-color--100: var(--color-primary);
+    --pf-v5-global--active-color--100: var(--color-primary);
+    --pf-v5-global--primary-color--dark-100: var(--color-primary);
+    --pf-v5-global--link--Color: var(--color-primary);
+    --pf-v5-global--link--Color--dark: var(--color-primary);
+    --pf-v5-global--primary-color--200: var(--color-primary);
+    --pf-v5-global--link--Color--hover: var(--color-hover);
+    --pf-v5-global--link--Color--dark--hover: var(--color-hover);
+}
+
+/* Input Focus States */
+input[type="text"],
+input[type="password"] {
+    transition: var(--transition-default);
+}
+
+input[type="text"]:focus,
+input[type="text"]:focus-within,
+input[type="text"]:focus-visible,
+input[type="password"]:focus,
+input[type="password"]:focus-within,
+input[type="password"]:focus-visible {
+    outline: var(--color-primary) auto 1px;
+    box-shadow: 0 0 0 2px rgba(35, 140, 140, 0.2);
+}
+
+/* Button Styling */
+.pf-v5-c-button {
+    transition: var(--transition-default);
+}
+
+.pf-v5-c-button:hover {
+    transform: translateY(-1px);
+}
