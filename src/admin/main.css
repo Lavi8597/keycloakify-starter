@@ -25,6 +25,10 @@
     color: var(--text-light);
 }
 
+.pf-v5-c-button.pf-m-link.pf-m-inline {
+    color: var(--color-accent) !important;
+}
+
 /* Sidebar styling */
 .pf-v5-c-page__sidebar {
     background-color: var(--color-secondary) !important;

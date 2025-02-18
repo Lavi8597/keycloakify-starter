@@ -10,16 +10,16 @@
     background: none;
 }
 
-.kcHeaderWrapperClass span[data-kc-msg="loginTitleHtml"] {
+.kcHeaderWrapperClass span[data-kc-msg="loginTitleHtml"], .kc-logo-text {
     font-size: 0;
     display: block;
     width: 250px; /* Adjust width as needed */
     height: 60px; /* Adjust height as needed */
     margin: 0 auto;
-    background-image: url('./assets/logo.png'); /* Add your logo path */
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
+    background-image: url('./assets/logo.png') !important; 
+    background-size: contain !important; 
+    background-repeat: no-repeat !important; 
+    background-position: center !important; 
 }
 
 /* Update header container */

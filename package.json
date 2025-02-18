@@ -1,7 +1,7 @@
 {
-    "name": "keycloakify-starter",
+    "name": "trustorbs",
     "version": "0.0.0",
-    "description": "Starter for Keycloakify 11",
+    "description": "trustorbs theme",
     "repository": {
         "type": "git",
         "url": "git://github.com/codegouvfr/keycloakify-starter.git"
@@ -35,7 +35,18 @@
         "keycloak-js": "26.0.7",
         "@keycloakify/keycloak-ui-shared": "~260007.0.2",
         "@patternfly/react-styles": "^5.4.0",
-        "@keycloak/keycloak-admin-client": "26.0.7"
+        "@keycloak/keycloak-admin-client": "26.0.7",
+        "@keycloakify/keycloak-admin-ui": "~260007.0.4",
+        "@patternfly/react-code-editor": "^5.4.3",
+        "dagre": "^0.8.5",
+        "file-saver": "^2.0.5",
+        "file-selector": "^0.6.0",
+        "flat": "^6.0.1",
+        "monaco-editor": "^0.52.0",
+        "p-debounce": "^4.0.0",
+        "react-dropzone": "^14.2.3",
+        "reactflow": "^11.11.4",
+        "use-react-router-breadcrumbs": "^4.0.1"
     },
     "devDependencies": {
         "@eslint/js": "^9.15.0",
@@ -58,7 +69,9 @@
         "typescript": "^5.2.2",
         "typescript-eslint": "^8.15.0",
         "vite": "^5.0.8",
-        "@types/lodash-es": "^4.17.12"
+        "@types/lodash-es": "^4.17.12",
+        "@types/dagre": "^0.7.52",
+        "@types/file-saver": "^2.0.7"
     },
     "engines": {
         "node": "^18.0.0 || >=20.0.0"

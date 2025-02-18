@@ -1628,7 +1628,7 @@
     "smtpServer": {},
     "loginTheme": "keycloakify-starter",
     "accountTheme": "keycloakify-starter",
-    "adminTheme": "",
+    "adminTheme": "keycloakify-starter",
     "emailTheme": "",
     "eventsEnabled": false,
     "eventsListeners": ["keycloakify-logging", "jboss-logging"],
