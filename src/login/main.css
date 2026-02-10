@@ -68,8 +68,6 @@
 
 /* Style the primary button */
 .kcButtonClass.kcButtonPrimaryClass {
-    background: #238C8C;
-    border-color: #238C8C;
     color: white;
     border-radius: 4px;
     padding: 10px;
@@ -91,51 +89,68 @@
     --pf-c-button--m-control--after--BorderBottomColor: #238C8C !important;
 }
 
-/* Style the secondary button */
-.kcButtonClass.kcButtonDefaultClass {
-    background: transparent;
-    border: 2px solid #238C8C;
-    color: #238C8C;
-    border-radius: 4px;
-    padding: 8px;
-    font-weight: 500;
-    transition: all 0.3s ease;
+h1#kc-page-title span[data-kc-msg="registerTitle"] {
+    margin-left: 55px;
 }
 
-.kcButtonClass.kcButtonDefaultClass:hover {
-    background: rgba(35, 140, 140, 0.1);
-    border-color: #1A6B6B;
-    color: #1A6B6B;
+
+/* Adjust the colors for links specifically */
+a {
+    color: var(--pf-v5-global--link--Color);
+  }
+  .login-pf a:hover {
+    color: var(--pf-v5-global--link--Color--hover);
+  }
+
+/* PatternFly Override */
+:root {
+    --pf-global--primary-color--100: var(--color-primary);
+    --pf-global--active-color--100: var(--color-primary);
+    --pf-global--primary-color--dark-100: var(--color-primary);
+    --pf-v5-global--link--Color: var(--color-primary);
+    --pf-v5-global--link--Color--dark: var(--color-primary);
+    --pf-global--primary-color--200: var(--color-primary);
+    --pf-v5-global--link--Color--hover: var(--color-hover);
+    --pf-v5-global--link--Color--dark--hover: var(--color-hover);
 }
 
-.kcButtonClass.kcButtonBlockClass {
-    width: 100%;
-    display: block;
+/* Input Focus States */
+input[type="text"],
+input[type="password"] {
+    transition: var(--transition-default);
 }
 
-.kcButtonClass.kcButtonLargeClass {
-    padding: 10px 16px;
-    font-size: 16px;
+input[type="text"]:focus,
+input[type="text"]:focus-within,
+input[type="text"]:focus-visible,
+input[type="password"]:focus,
+input[type="password"]:focus-within,
+input[type="password"]:focus-visible {
+    outline: var(--color-primary) auto 1px;
+    box-shadow: 0 0 0 2px rgba(35, 140, 140, 0.2);
 }
 
-/* Style links */
-.kcFormOptionsWrapperClass a {
-    color: #238C8C;
-    text-decoration: none;
+/* Button Styling */
+.pf-v5-c-button {
+    transition: var(--transition-default);
 }
 
-.kcFormOptionsWrapperClass a:hover {
-    color: #238C8C;
-    text-decoration: underline;
+.pf-v5-c-button:hover {
+    transform: translateY(-1px);
 }
 
-/* Style the registration link */
-.kcSignUpClass a {
-    color: #238C8C;
-    text-decoration: none;
-}
-
-.kcSignUpClass a:hover {
-    color: #238C8C;
-    text-decoration: underline;
+:root {
+    /* Primary Colors */
+    --color-primary: #238C8C;
+    --color-primary-dark: #012b2e;
+    --color-secondary: #024449;
+    --color-accent: #29F48F;
+    --color-hover: #1c7e7e;
+    
+    /* Text Colors */
+    --text-light: #ffffff;
+    --text-dark: #333333;
+    
+    /* Transition */
+    --transition-default: all 0.3s ease;
 }

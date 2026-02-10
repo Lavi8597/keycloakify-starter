@@ -7,7 +7,8 @@ export default defineConfig({
     plugins: [
         react(),
         keycloakify({
-            accountThemeImplementation: "Single-Page"
+            accountThemeImplementation: "Single-Page",
+            extraThemeProperties: ["darkMode=false"]
         })
     ]
 });
