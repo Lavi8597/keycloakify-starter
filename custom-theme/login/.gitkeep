@@ -1,0 +1,33 @@
+# Custom SumSub Templates
+
+Place your custom SumSub FreeMarker templates in this directory.
+
+## Required Templates
+
+1. **sumsub-verification.ftl** - Main verification page with SumSub WebSDK
+2. **sumsub-pending.ftl** - Pending status page
+
+## How to Add Templates
+
+1. Copy your SumSub templates to this directory:
+   ```bash
+   cp /path/to/sumsub-verification.ftl custom-theme/login/
+   cp /path/to/sumsub-pending.ftl custom-theme/login/
+   ```
+
+2. Build and integrate:
+   ```bash
+   npm run build-with-sumsub
+   ```
+
+## Template Security
+
+Ensure your templates include:
+- FreeMarker auto-escaping: `${variable?js_string}`
+- Input validation
+- Proper CSP headers
+- HTTPS-only resources
+
+## Documentation
+
+See [SUMSUB_INTEGRATION.md](../../SUMSUB_INTEGRATION.md) for complete integration guide.

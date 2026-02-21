@@ -48,10 +48,53 @@ npx keycloakify initialize-account-theme
 npx keycloakify initialize-email-theme
 ```
 
+# Initializing the email theme
+
+```bash
+npx keycloakify initialize-email-theme
+```
+
+# Custom SumSub Integration
+
+This theme includes integration support for custom SumSub verification templates.
+
+## Quick Setup
+
+```bash
+# Build theme with SumSub templates (one command)
+npm run build-with-sumsub
+```
+
+## Manual Integration
+
+If you have custom SumSub FreeMarker templates:
+
+```bash
+# 1. Build the Keycloakify theme
+npm run build-keycloak-theme
+
+# 2. Integrate SumSub templates
+npm run integrate-sumsub
+
+# 3. Verify integration
+./scripts/verify-integration.sh
+```
+
+## Adding SumSub Templates
+
+Place your templates in `custom-theme/login/`:
+```
+custom-theme/login/
+├── sumsub-verification.ftl
+└── sumsub-pending.ftl
+```
+
+For complete documentation, see [SUMSUB_INTEGRATION.md](SUMSUB_INTEGRATION.md).
+
 # GitHub Actions
 
 The starter comes with a generic GitHub Actions workflow that builds the theme and publishes
-the jars [as GitHub releases artifacts](https://github.com/keycloakify/keycloakify-starter/releases/tag/v10.0.0).  
+the jars [as GitHub releases artifacts](https://github.com/keycloakify/keycloakify-starter/releases/tag/v10.0.0).
 To release a new version **just update the `package.json` version and push**.
 
 To enable the workflow go to your fork of this repository on GitHub then navigate to:

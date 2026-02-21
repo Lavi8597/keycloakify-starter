@@ -12,6 +12,8 @@
         "dev": "vite",
         "build": "tsc && vite build",
         "build-keycloak-theme": "npm run build && keycloakify build",
+        "integrate-sumsub": "./scripts/integrate-sumsub-templates.sh",
+        "build-with-sumsub": "npm run build-keycloak-theme && npm run integrate-sumsub",
         "storybook": "storybook dev -p 6006",
         "format": "prettier . --write"
     },
